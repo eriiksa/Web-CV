@@ -75,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function atualizarTextos() {
         document.querySelectorAll("[data-translate]").forEach(el => {
-            // CORRIGIDO: Verifica se o idioma começa com "pt"
             if (i18next.language.startsWith("pt")) {
                 // Reverte para o texto original em português
                 el.innerHTML = el.dataset.originalText;
@@ -89,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Altera o idioma e atualiza os textos
     function mudar_idioma() {
         const flag = document.getElementById("flag");
-        // CORRIGIDO: Verifica se o idioma começa com "pt"
         const novoIdioma = i18next.language.startsWith("pt") ? "en" : "pt";
 
         i18next.changeLanguage(novoIdioma, function () {

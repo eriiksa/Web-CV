@@ -7,7 +7,6 @@
 }
 
 :root {
-    /* MODIFICADO: Cor do container para o cinza do Gemini */
     --primary-color: #1E1F20; 
     --text-color: #e0cf33;
 }
@@ -20,7 +19,6 @@ body {
 
 body {
     font-family: Inter, sans-serif;
-    /* MODIFICADO: Cor de fundo para o cinza escuro do Gemini */
     background-color: #131314; 
     color: white;
     overflow-x: hidden; 
@@ -43,7 +41,6 @@ a:not(.pdf_button):hover {
     border: 3px solid rgba(70, 69, 69, 0.301);
 }
 
-/* ===== NOME (CENTRALIZADO/LINHA ÚNICA) ===== */
 .nome_perfil {
     width: 100%;
     font-size: 2.5rem;
@@ -73,7 +70,7 @@ a:not(.pdf_button):hover {
 
 .logos {
     width: 100%;
-    top: 15px;
+    top: 10px;
     margin-top: 5px;
     left: 40px;
     position: fixed;
