@@ -155,7 +155,7 @@ a:not(.pdf_button):hover {
     margin: 0 auto;
     max-width: 1000px;
     width: 90%;
-    background-color: var(--primary-color); /* Agora usa #1E1F20 */
+    background-color: var(--primary-color); 
     border-radius: 1rem;
 }
 
@@ -346,4 +346,17 @@ h3 {
         height: 30px;
     }
 
+}
+
+.container_cursos ul {
+    list-style-type: none; 
+    padding-left: 0;       
+}
+
+.container_formacao p,
+.container_cursos li {
+    border-left: 2.5px solid white; 
+    padding-left: 12px;  
+    margin-top: 13px;    
+    line-height: 1.6;    
 }
