@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="styles/CV.css">
+    <script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
+    <script src="scripts/CV.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="perfil">
+            <div class="container_intro">
+                <div class="perfil_esquerda">
+                    <div class="Foto_perfil">
+                        <img src="Imagens/Foto_perfil.jpg" alt="Foto de Perfil">
+                    </div>
+                    <div class="container_pdf">
+                        <a href="Curriculo Erik Fernando.pdf" target="_blank" rel="noopener noreferrer"
+                            data-translate="pdf" class="pdf_button">
+                            <img src="Imagens/pdf.png" alt="pdf_logo" class="pdf_logo">
+                            <span class="pdf_texto">Baixar Currículo como PDF</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="perfil_direita">
+                    <div class="bandeira-container" onclick="mudar_idioma()">
+                        <img id="flag" src="Imagens/brasil_flag.png" alt="Bandeira do Brasil">
+                    </div>
+                    <div>
+                        <h1 class="nome_perfil">Erik Fernando Brito de Sá</h1>
+                        <p class="titulo_perfil" data-translate="titulo">Desenvolvedor de software JR.</p>
+                        <nav>
+                            <div class="logos">
+                                <span class="linkedin">
+                                    <a href="https://www.linkedin.com/in/eriksa/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img src="Imagens/linkedin.png" alt="linkedin_logo"></a>
+                                </span>
+                                <span class="github">
+                                    <a href="https://github.com/eriiksa" target="_blank" rel="noopener noreferrer">
+                                        <img src="Imagens/github.png" alt="github_logo"></a>
+                                </span>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_perfil">
+                <section class="contato">
+                    <h1 data-translate="contato">Informações de contato:</h1>
+                    <ul>
+                        <li data-translate="telefone">Telefone: (81) 98541-4017</li>
+                        <li>E-mail: <a href="mailto:erikfernandosa@gmail.com">erikfernandosa@gmail.com</a></li>
+                        <li data-translate="endereco">Endereço: Candeias, Jaboatão dos Guararapes - Pernambuco</li>
+                        </ul>
+                </section>
+
+                <section class="resumo">
+                    <h1 data-translate="resumo">Resumo</h1>
+                    <p data-translate="resumo_texto">Estudante de Engenharia de Software com experiência em otimizar e
+                        automatizar processos. Meu foco é simplificar rotinas de trabalho manuais, melhorando a
+                        produtividade e o bem-estar dos meus colegas de equipe.</p>
+                </section>
+
+
+                <div class="cargos">
+                    <h1 data-translate="experiencia">Experiência Profissional </h1>
+
+                    <h2 data-translate="cargo_recente">
+                        Representante de Atendimento ao cliente JR (Setembro 2025 - Atual)
+                    </h2>
+                    <div class="empresa">
+                        <span data-translate="empresa">Empresa -</span>
+                        <span class="Fed">Fed</span><span class="Ex">Ex</span>
+                    </div>
+                    <ul class="atividades">
+                        <li data-translate="app_automacao">Desenvolvimento de um app utilizando de Python, Selenium e
+                            Tesseract OCR para a automação de consultas, download e leitura dos documentos nos sistemas
+                            internos FedEx, tornando o processo totalmente autônomo e simplificado para a equipe.</li>
+                        <li data-translate="contato_cliente_recente">Contato direto com o cliente, via e-mails,
+                            protocolos e ligações, visando resolver seus problemas com quaisquer entregas que tenham
+                            feito.</li>
+                        <li data-translate="resolucao_problemas_recente">Resolução de problemas junto ao cliente e à
+                            equipe, buscando otimizar processos e manter o cliente satisfeito.</li>
+                        <li data-translate="planilhas_excel">Elaboração de planilhas de performance; Automação de
+                            relatórios existentes, utilizando de fórmulas do excel (PROCV, PROCX, CONT.SE ....).</li>
+                        <li data-translate="dashboards">Criação de dashboards que são utilizados em apresentações para o
+                            cliente direto.</li>
+                    </ul>
+
+                    <h3 data-translate="jovem_aprendiz_admin">Jovem Aprendiz - Auxiliar Administrativo (Julho 2024 -
+                        Agosto 2025)</h3>
+                    <div class="empresa">
+                        <span data-translate="empresa">Empresa -</span>
+                        <span class="Fed">Fed</span><span class="Ex">Ex</span>
+                    </div>
+                    <ul class="atividades">
+                        <li data-translate="otimizacao_python">Otimização da consulta de documentos nos sistemas web da
+                            empresa, utilizando Python e Selenium WebDriver, reduzindo o tempo das buscas em 53%.</li>
+                        <li data-translate="rncs_anterior">Realizei a abertura, fechamento e atualização de Relatórios
+                            de Não Conformidade (RNCs), com a finalidade de registrar problemas ocorridos com cargas de
+                            clientes.</li>
+                        <li data-translate="controle_documentos">Controle, digitalização e upload de notas fiscais e
+                            documentos diversos.</li>
+                        <li data-translate="suporte_ti">Prestação de suporte de informática a diversas equipes no
+                            ambiente de trabalho.</li>
+                        <li data-translate="manutencao_planilhas">Elaboração e manutenção de planilhas para o controle
+                            de documentação como RNCs, indenizações e CNHs de motoristas.</li>
+                    </ul>
+
+                </div>
+                <div class="skills_container">
+                    <h1 class="Habilidades" data-translate="habilidades">Habilidades</h1>
+                    <div class="skills_content">
+                        <div class="skills_section">
+                            <h1>Desenvolvimento:</h1>
+                            <ul>
+                                <li>Python</li>
+                                <li>Selenium</li>
+                                <li>JavaScript</li>
+                                <li>Git</li>
+                                <li>GitHub</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Tailwindcss</li>
+                            </ul>
+                        </div>
+                        <div class="skills_section">
+                            <h1>Softwares de Escritório:</h1>
+                            <ul>
+                                <li>Microsoft Word</li>
+                                <li>Excel</li>
+                                <li>Power Point</li>
+                                <li>Canva</li>
+                            </ul>
+                        </div>
+                        <div class="skills_section">
+                            <h1>Competências:</h1>
+                            <ul>
+                                <li data-translate="resolucao_problemas">Resolução de Problemas</li>
+                                <li data-translate="automacao_processos">Automação de Processos</li>
+                                <li data-translate="atendimento_cliente_comp">Atendimento ao cliente</li>
+                                <li data-translate="proatividade">Proatividade</li>
+                                <li data-translate="rapida_adaptacao">Rápida Adaptação</li>
+                                <li data-translate="aprendizado_continuo">Aprendizado Contínuo</li>
+                            </ul>
+                        </div>
+                        <div class="skills_section">
+                            <h1>Idiomas:</h1>
+                            <ul>
+                                <li data-translate="ingles_c2">Inglês (Nivel C2 - Proficiente)</li>
+                                <li data-translate="portugues_nativo">Português (Nativo)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_formacao">
+                    <h1 data-translate="formacao">Formação</h1>
+                    <p data-translate="ensino_superior">Ensino Superior - Engenharia de Software Cruzeiro do Sul (2025.1
+                        - 2028.2)</p>
+                    <p data-translate="ensino_medio">Ensino médio completo - Colégio Elo (2018 - 2020)</p>
+                </div>
+                <div class="container_cursos">
+                    <h1 data-translate="cursos">Cursos</h1>
+                    <p data-translate="logica">Lógica de programação com Python - USP</p>
+                    <p data-translate="fundamentos_python">Fundamentos do Python - Digital Innovation One</p>
+                    <p data-translate="ifood">Potência Tech Ifood (Python para ciência de dados) - Digital Innovation
+                        One </p>
+                    <p data-translate="desenvolvimento_web">Desenvolvimento web utilizando: Javascript, HTML e CSS -
+                        Curso em vídeo</p>
+                    <p data-translate="js_developer">Formação JavaScript Developer - Digital Innovation One</p>
+                    <p data-translate="excel">Excel do básico ao avançado - Hashtag Treinamentos</p>
+                    <p data-translate="cert_ingles">Certificação de Inglês - Nivel C2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
